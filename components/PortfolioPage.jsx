@@ -263,6 +263,13 @@ export default function PortfolioPage() {
               <a href="https://github.com/narendrarane50" target="_blank" rel="noreferrer">
                 GitHub
               </a>
+              <a
+                href="https://portfolio-narendrarane50s-projects.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Portfolio
+              </a>
               <a href="/Narendra_Rane_Resume_2.pdf" download>
                 Download Resume
               </a>

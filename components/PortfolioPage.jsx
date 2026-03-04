@@ -220,32 +220,37 @@ export default function PortfolioPage() {
           <div className="skill-groups">
             <article className="card">
               <h3>Programming</h3>
-              <p>Python, JavaScript, C++, SQL, R, MongoDB, SQLite</p>
+              <p>Python, C++, SQL, JavaScript, Bash</p>
             </article>
             <article className="card">
-              <h3>Machine Learning & AI</h3>
+              <h3>ML &amp; Deep Learning</h3>
               <p>
-                Supervised and Unsupervised Learning, Deep Learning, Neural Networks, Hypothesis
-                Testing, Scikit-learn, SciPy
+                PyTorch, TensorFlow, scikit-learn, Transformers, XGBoost
               </p>
             </article>
             <article className="card">
-              <h3>Data Science & Analytics</h3>
+              <h3>Generative AI &amp; NLP</h3>
+              <p>RAG, LangChain, LLaMA, BERT, semantic search, embeddings</p>
+            </article>
+            <article className="card">
+              <h3>Computer Vision</h3>
               <p>
-                Data Collection, Data Cleaning, Data Mining, Data Visualization, Pandas, NumPy,
-                Matplotlib, Seaborn
+                CNNs, Vision Transformers (ViT), self-supervised learning (MAE), OpenCV
               </p>
             </article>
             <article className="card">
-              <h3>Tools & Platforms</h3>
-              <p>Jupyter Notebook, Google Colab, Docker, Git, Excel, Linux</p>
+              <h3>Data &amp; Databases</h3>
+              <p>Pandas, NumPy, PostgreSQL, MongoDB</p>
             </article>
             <article className="card">
-              <h3>Techniques</h3>
+              <h3>Deployment &amp; MLOps</h3>
               <p>
-                Predictive Modeling, Statistical Modeling, NLP, Artificial Intelligence, Computer
-                Vision
+                Docker, FastAPI, REST APIs, ONNX, MLflow
               </p>
+            </article>
+            <article className="card">
+              <h3>Tools &amp; Systems</h3>
+              <p>Git, Linux, CI/CD fundamentals, AWS (EC2, S3)</p>
             </article>
           </div>
         </section>

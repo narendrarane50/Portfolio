@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 
 const navItems = [
   { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' }
 ];
@@ -94,16 +94,19 @@ export default function PortfolioPage() {
 
       <main>
         <section className="hero reveal">
-          <p className="eyebrow">MS Applied Machine Learning Student</p>
-          <h1>Building practical AI systems that perform in the real world.</h1>
+          <p className="eyebrow">Applied Machine Learning Graduate Student</p>
+          <h1>Building retrieval-augmented, multimodal, and real-time AI systems.</h1>
           <p>
-            I am Narendra Rane, a machine learning graduate student at the University of Maryland
-            focused on retrieval-augmented generation, computer vision, and real-time AI deployment.
+            Applied Machine Learning graduate student at the University of Maryland with hands-on
+            experience building retrieval-augmented generation systems, multimodal computer vision
+            models, and real-time ML pipelines. Skilled in PyTorch, Transformers, and scalable ML
+            deployment.
           </p>
           <div className="hero-meta">
             <span>College Park, MD 20740</span>
             <span>(240) 854-8828</span>
             <span>narendrarane50@gmail.com</span>
+            <span>Seeking full-time ML Engineer and Applied AI roles from May 2026</span>
           </div>
           <div className="hero-actions">
             <a className="btn primary" href="#projects">
@@ -131,6 +134,31 @@ export default function PortfolioPage() {
           </div>
         </section>
 
+        <section id="experience" className="section reveal">
+          <h2>Work Experience</h2>
+          <article className="card">
+            <h3>Technical Consultant (Data Science &amp; Analytics)</h3>
+            <p className="meta">Winspire Solutions Pvt. Ltd, Pune, India | May 2021 - Sept 2022</p>
+            <ul>
+              <li>
+                Built scalable data pipelines using Python (Pandas, NumPy) and SQL to process 1M+
+                enterprise records, improving reporting accuracy by 28% and reducing manual data
+                processing by 40%.
+              </li>
+              <li>
+                Conducted exploratory data analysis and predictive modeling (scikit-learn, XGBoost)
+                to identify operational patterns, enabling data-driven optimizations that improved
+                system performance by 30% and reduced operational costs by 18%.
+              </li>
+              <li>
+                Developed analytics dashboards and optimized SQL queries across PostgreSQL and ERP
+                systems, reducing query latency by 45% and supporting KPI tracking for 10+
+                enterprise client deployments.
+              </li>
+            </ul>
+          </article>
+        </section>
+
         <section id="projects" className="section reveal">
           <h2>Projects</h2>
           <div className="grid">
@@ -139,16 +167,18 @@ export default function PortfolioPage() {
               <p className="meta">Oct 2025 - Dec 2025</p>
               <ul>
                 <li>
-                  Built a dual-mode RAG pipeline (text-only vs structured multimodal) for PDF QA
-                  using FastAPI, Qdrant, Sentence Transformers, and LLaMA-3.3-70B.
+                  Designed a dual-mode RAG system (text-only vs. structured multimodal) for PDF
+                  question answering using FastAPI, Qdrant, Sentence Transformers, and
+                  LLaMA-3.3-70B.
                 </li>
                 <li>
-                  Improved answer quality over No-RAG baseline by +47.7% keyword overlap and +24.5%
-                  faithfulness.
+                  Improved answer quality over a No-RAG baseline by +47.7% keyword overlap and
+                  +24.5% faithfulness, demonstrating the impact of retrieval-augmented generation.
                 </li>
                 <li>
-                  Added structured PDF parsing and semantic chunking, improving conceptual retrieval
-                  by up to +8.3% while keeping citation-grounded outputs.
+                  Implemented structured PDF parsing and semantic chunking, improving conceptual
+                  query retrieval by up to +8.3% keyword overlap while preserving
+                  citation-grounded outputs.
                 </li>
               </ul>
             </article>
@@ -158,16 +188,18 @@ export default function PortfolioPage() {
               <p className="meta">Oct 2025 - Dec 2025</p>
               <ul>
                 <li>
-                  Designed a hybrid facial expression recognition framework combining AU-conditioned
-                  MAE pretraining with pose normalization on RAF-DB.
+                  Designed a hybrid FER framework combining AU-conditioned self-supervised MAE
+                  pretraining with pose normalization, evaluated on RAF-DB (7 classes) under
+                  in-the-wild pose variation.
                 </li>
                 <li>
-                  Implemented AU-conditioned ViT-MAE with token conditioning and FiLM-based
-                  modulation, reaching 83.67% accuracy and 75.49% Macro-F1.
+                  Implemented an AU-Conditioned ViT-MAE, injecting Action Units via token
+                  conditioning and FiLM-based feature modulation, and achieved 83.67% accuracy /
+                  75.49% Macro-F1 with a supervised FER baseline.
                 </li>
                 <li>
-                  Ran ablations showing effects of pose normalization and AU transfer limits due to
-                  dataset scale and AU noise.
+                  Performed ablations showing pose normalization reduced accuracy to 80.28% and
+                  AU-MAE transfer limits (71.79% accuracy) due to dataset scale and AU noise.
                 </li>
               </ul>
             </article>
@@ -177,42 +209,20 @@ export default function PortfolioPage() {
               <p className="meta">Oct 2025 - Dec 2025</p>
               <ul>
                 <li>
-                  Developed a CNN-Transformer gesture recognition system for Meta Quest 3 with 94.14%
-                  accuracy and 79 ms latency.
+                  Developed a CNN-Transformer gesture recognition system for Meta Quest 3, achieving
+                  94.14% accuracy with 79 ms latency in real-time VR environments.
                 </li>
                 <li>
-                  Built a multi-modal model combining RGB features and hand segmentation masks,
-                  outperforming 3D CNN baselines with 2.6x faster inference.
+                  Designed a multi-modal architecture combining RGB features and hand segmentation
+                  masks, outperforming 3D CNN baselines with 2.6x faster inference.
                 </li>
                 <li>
-                  Delivered an end-to-end ML workflow from dataset creation (671 videos) to ONNX edge
-                  deployment.
+                  Built a full ML pipeline from dataset creation (671 videos) to ONNX deployment and
+                  edge optimization.
                 </li>
               </ul>
             </article>
           </div>
-        </section>
-
-        <section id="experience" className="section reveal">
-          <h2>Work Experience</h2>
-          <article className="card">
-            <h3>Microsoft Nav Technical Consultant</h3>
-            <p className="meta">Winspire Solutions Pvt. Ltd, Pune, India | May 2021 - Sept 2022</p>
-            <ul>
-              <li>
-                Improved system performance by 30%, driving 15% better operational efficiency and a
-                10% increase in client profitability.
-              </li>
-              <li>
-                Delivered 10+ full-cycle ERP implementations in Microsoft Dynamics NAV and Business
-                Central with 100% on-time delivery.
-              </li>
-              <li>
-                Resolved 50+ high-priority issues, reducing average resolution time by 40% and cutting
-                long-term support costs by 20%.
-              </li>
-            </ul>
-          </article>
         </section>
 
         <section id="skills" className="section reveal">
@@ -225,28 +235,33 @@ export default function PortfolioPage() {
             <article className="card">
               <h3>ML &amp; Deep Learning</h3>
               <p>
-                PyTorch, TensorFlow, scikit-learn, Transformers, XGBoost
+                PyTorch, TensorFlow, scikit-learn, Transformers, Hugging Face, XGBoost, LLM
+                fine-tuning, LoRA/PEFT
               </p>
             </article>
             <article className="card">
               <h3>Generative AI &amp; NLP</h3>
-              <p>RAG, LangChain, LLaMA, BERT, semantic search, embeddings</p>
+              <p>
+                RAG, LangChain, LLaMA, BERT, semantic search, embeddings, vector databases
+                (Qdrant/FAISS)
+              </p>
             </article>
             <article className="card">
               <h3>Computer Vision</h3>
               <p>
-                CNNs, Vision Transformers (ViT), self-supervised learning (MAE), OpenCV
+                CNNs, Vision Transformers (ViT), self-supervised learning (MAE), OpenCV, prompt
+                engineering
               </p>
             </article>
             <article className="card">
               <h3>Data &amp; Databases</h3>
-              <p>Pandas, NumPy, PostgreSQL, MongoDB</p>
+              <p>
+                Pandas, NumPy, PostgreSQL, MongoDB, EDA, feature engineering, data visualization
+              </p>
             </article>
             <article className="card">
               <h3>Deployment &amp; MLOps</h3>
-              <p>
-                Docker, FastAPI, REST APIs, ONNX, MLflow
-              </p>
+              <p>Docker, FastAPI, REST APIs, ONNX, MLflow, model serving, experiment tracking</p>
             </article>
             <article className="card">
               <h3>Tools &amp; Systems</h3>
@@ -258,7 +273,10 @@ export default function PortfolioPage() {
         <section id="contact" className="section reveal">
           <h2>Contact</h2>
           <div className="contact-card card">
-            <p>Open to internships and full-time opportunities in machine learning and AI engineering.</p>
+            <p>
+              Seeking full-time Machine Learning Engineer and Applied AI opportunities starting May
+              2026.
+            </p>
             <div className="contact-links">
               <a href="mailto:narendrarane50@gmail.com">narendrarane50@gmail.com</a>
               <a href="tel:+12408548828">(240) 854-8828</a>
